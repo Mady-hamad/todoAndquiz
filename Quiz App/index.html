@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css" integrity="sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https:/www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+    <script src="https:/www.gstatic.com/firebasejs/7.18.0/firebase-database.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz app</title>
+</head>
+<body>
+    
+<h1> <i class="fa-solid fa-align-left"></i>Quiz Application Using Firebase <i class="fa-solid fa-book-open"></i> </h1>
+
+
+<input type="text" placeholder="Enter Your Name and ID" id="name"> <br> <br>
+
+<div>
+
+<fieldset>
+
+
+    <p> 1)   What is 2+15</p>
+
+    <input id="q1-a1" name="math_ques" type="radio">17</input>
+    <br>
+    <input id="q1-a2" name="math_ques" type="radio">10</input>
+    <br>
+    <input id="q1-a3" name="math_ques" type="radio">23</input>
+    <br>
+    <input id="q1-a4" name="math_ques" type="radio">20</input>
+</fieldset>
+
+</div>
+
+
+<div>
+
+    <fieldset>
+    
+    
+        <p> 2)   What is the capital of Pakistan</p>
+    
+        <input id="q2-a1" name="Capital_city" type="radio">Lahore</input>
+        <br>
+        <input id="q2-a2" name="Capital_city" type="radio">Islamabad</input>
+        <br>
+        <input id="q2-a3" name="Capital_city" type="radio">Hyderabad</input>
+        <br>
+        <input id="q2-a4" name="Capital_city" type="radio">Karachi</input>
+    </fieldset>
+    
+    </div>
+    
+
+    <div>
+
+        <fieldset>
+        
+        
+            <p> 3)   What is not an programming language</p>
+        
+            <input id="q3-a1" name="Progrm_lang" type="radio">JavaScript</input>
+            <br>
+            <input id="q3-a2" name="Progrm_lang" type="radio">Java</input>
+            <br>
+            <input id="q3-a3" name="Progrm_lang" type="radio">PHP</input>
+            <br>
+            <input id="q3-a4" name="Progrm_lang" type="radio">HTML</input>
+        </fieldset>
+        
+        </div>
+
+
+
+        <div>
+
+            <fieldset>
+            
+            
+                <p> 4)  JavaScript is an OOP based Language or scripted language</p>
+            
+                <input id="q4-a1" name="Prog_lang" type="radio">OOP</input>
+                <br>
+                <input id="q4-a2" name="Prog_lang" type="radio">Scripted</input>
+                <br>
+                <input id="q4-a3" name="Prog_lang" type="radio">Both </input>
+                <br>
+            </fieldset>
+            
+            </div>
+
+            <div class="btn">
+            <!-- <button id="rslt" onclick="checkAns()">Result</button> -->
+            <button id="rslt" onclick="checkAns()" >Check Data</button>
+        </div>
+
+
+            <script src="app.js"></script>
+        
+
+</body>
+</html>
